@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dash Board Quizo</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link
+    href="https://w7.pngwing.com/pngs/679/92/png-transparent-pink-floral-letter-q-art-letter-q-flowers-letter-q-png-graphics-flower-a.png"
+    rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./dashboard.css">
+
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- <img src="./logo.jpg" alt=""> -->
+        <span class="d-none d-lg-block" style="font-size: 50px;">Quizo...</span>
+      </a>
+
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="Dashboard">
+          <a href="#">Dashboard</a>
+        </li>
+
+        <li class="About">
+          <a href="#">AboutUs</a>
+        </li>
+
+        <li class="logout">
+          <a href="./index.html">Logout</a>
+        </li>
+
+        <li class="nav-item dropdown pe-3" id="pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" id="Prof">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <main id="main" class="main">
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+
+            <!-- Customers Card  1 -->
+            <div class="col-xxl-6 col-xl-6">
+              <div class="card info-card customers-card">
+
+                <div class="card-body">
+                  <h5 class="card-title"> <span></span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class=""><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                          data-bs-toggle="dropdown">
+                          <img src="./img/notebook.gif" alt="Profile" class="rounded-circle">
+
+                        </a></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 style="font-size: 50px;">Welcome to Quizo</h6>
+                      <h4 style="font-weight: bold; color: red;">Test Your Knowlade here</h4>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- End Customers Card -->
+
+            <!-- Customers Card 2-->
+            <div class="col-xxl-6 col-xl-6">
+              <div class="card info-card customers-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Your Over All Score<span></span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class=""><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                          data-bs-toggle="dropdown">
+                          <img src="./img/score.gif" alt="Profile" class="rounded-circle">
+
+                        </a></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 style="font-size: 60px;">88%</h6>
+
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- End Customers Card -->
+
+            <!-- Quiz Card gneral -->
+            <div class="col-xxl-3 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title"> <span></span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class=""><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                          data-bs-toggle="dropdown">
+                          <img src="./img/1.jpg" alt="Profile" class="rounded-circle">
+
+                        </a></i>
+
+                    </div>
+                    <div class="ps-3">
+                      <a href="./main.html">
+                        <h6>General</h6>
+                      </a>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">Scored in Last Attempt</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End quiz -->
+
+            <!-- Quiz Card html -->
+            <div class="col-xxl-3 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title"> <span></span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class=""><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                          data-bs-toggle="dropdown">
+                          <img src="./img/2.jpg" alt="Profile" class="rounded-circle">
+
+                        </a></i>
+
+                    </div>
+                    <div class="ps-3">
+                      <a href="./main.html">
+                        <h6>HTML</h6>
+                      </a>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">Scored in Last Attempt</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End quiz -->
+
+            <!-- Quiz Card css -->
+            <div class="col-xxl-3 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title"> <span></span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class=""><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                          data-bs-toggle="dropdown">
+                          <img src="./img/3.jpg" alt="Profile" class="rounded-circle">
+
+                        </a></i>
+
+                    </div>
+                    <div class="ps-3">
+                      <a href="./main.html">
+                        <h6>CSS</h6>
+                      </a>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">Scored in Last Attempt</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End quiz -->
+
+            <!-- Quiz Card javascript -->
+            <div class="col-xxl-3 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title"> <span></span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class=""><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                          data-bs-toggle="dropdown">
+                          <img src="./img/4.jpg" alt="Profile" class="rounded-circle">
+
+                        </a></i>
+
+                    </div>
+                    <div class="ps-3">
+                      <a href="./main.html">
+                        <h6>Java Script</h6>
+                      </a>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">Scored in Last Attempt</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End quiz -->
+
+            <!-- Quiz Card python -->
+            <div class="col-xxl-3 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title"> <span></span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class=""><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                          data-bs-toggle="dropdown">
+                          <img src="./img/5.jpg" alt="Profile" class="rounded-circle">
+
+                        </a></i>
+
+                    </div>
+                    <div class="ps-3">
+                      <a href="./main.html">
+                        <h6>Python</h6>
+                      </a>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">Scored in Last Attempt</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End quiz -->
+
+            <!-- Quiz Card 1 -->
+            <div class="col-xxl-3 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title"> <span></span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class=""><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                          data-bs-toggle="dropdown">
+                          <img src="./img/6.png" alt="Profile" class="rounded-circle">
+
+                        </a></i>
+
+                    </div>
+                    <div class="ps-3">
+                      <a href="./main.html">
+                        <h6>Java</h6>
+                      </a>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">Scored in Last Attempt</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End quiz -->
+
+            <!-- Quiz Card 1 -->
+            <div class="col-xxl-3 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title"> <span></span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class=""><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                          data-bs-toggle="dropdown">
+                          <img src="./img/7.svg" alt="Profile" class="rounded-circle">
+
+                        </a></i>
+
+                    </div>
+                    <div class="ps-3">
+                      <a href="./main.html">
+                        <h6>C lang</h6>
+                      </a>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">Scored in Last Attempt</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End quiz -->
+
+            <!-- Quiz Card 1 -->
+            <div class="col-xxl-3 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title"> <span></span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class=""><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                          data-bs-toggle="dropdown">
+                          <img src="./img/8.png" alt="Profile" class="rounded-circle">
+
+                        </a></i>
+
+                    </div>
+                    <div class="ps-3">
+                      <a href="./main.html">
+                        <h6>C ++</h6>
+                      </a>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">Scored in Last Attempt</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End quiz -->
+
+          </div>
+        </div><!-- End Left side columns -->
+
+
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer" style="background-color: midnightblue;">
+    <div class="copyright" style="color: aliceblue;">
+      &copy; Copyright <strong><span>Computer Science Diet</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits" style="color: aliceblue;">
+      Designed by <a href="https://bootstrapmade.com/"><strong>PVVSA</strong> </a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

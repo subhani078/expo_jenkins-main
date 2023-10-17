@@ -1,0 +1,29 @@
+.rounded-circle {
+
+    height: 80px !important;
+    width: 80px !important;
+}
+
+.Dashboard {
+    margin-right: 50px !important;
+    font-weight: bold !important;
+}
+
+.About {
+    margin-right: 50px !important;
+    font-weight: bold !important;
+}
+
+.logout {
+    margin-right: 20px !important;
+    font-weight: bold !important;
+}
+
+#pe-3 {
+    margin-right: 70px;
+}
+#Prof {
+
+    height: 80px !important;
+    width: 40px !important;
+}

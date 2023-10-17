@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    background: url(./img/loginback.jpg);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    /* width: 380px; */
+    /* padding: 20px; */
+    background: #0a0707c9;
+    text-align: center;
+    border: 2px solid rgb(4, 122, 138);
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 #00000033;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    background: #eee4e4;
+    color: #0b0707;
+    border: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #03db47;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: #fffafa;
+}
+
+a {
+    color: #f6f4f4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #07b340e8;
+}

@@ -1,0 +1,358 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* background-color: #044b63e5; */
+    background-image: url(https://i.pinimg.com/originals/db/34/d4/db34d40b271fb59477621550bf73ea0b.jpg);
+    /* Dark background color */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: scroll;
+    
+}
+
+.quiz-container {
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 20px;
+    border: 1px solid #1c1b1b;
+    border-radius: 10px;
+    background: #f0f3f6f8;
+    /* Slightly darker background color */
+}
+
+h1 {
+    color: #111010;
+    font-size: 30px;
+    
+}
+
+.option {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+/* Style for the option buttons */
+.option button {
+    width: calc(45% - 15px);
+    margin-top: 10px;
+    padding: 10px 20px;    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    color: rgb(21, 20, 20);    
+    cursor: pointer;
+    background: transparent;
+    /* transition: background-color 0.3s ease; */
+    font-size: 16px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid, yellow) 1 50px;
+    border: 2px solid rgb(9, 8, 8);
+    border-radius: 10px;
+    animation: rotate-hue linear 1000ms infinite;    
+    animation-play-state: running;
+    font-weight: bold;
+}
+
+/* Hover style for the option buttons */
+.option button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.option button.selected {
+    background-color: #00cc66;
+
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#prev-button,
+#next-button {
+    background-color: #007BFF;
+    /* Blue background */
+    color: rgb(14, 13, 13);
+    /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* Font size */
+    margin-top: 40px;
+    background: none;
+    border: none;
+}
+
+
+
+/* Styling for the submit button */
+#submit-button {
+    background-color: #00cc66;
+    /* Green background for submit button */
+    color: white;
+    /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* Font size */
+}
+
+/* Styling for the score card */
+#score-card {
+    display: none;
+    background-color: #333;
+    /* Dark background color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#score-card h2 {
+    color: #e80808;
+    /* White text color */
+}
+
+#score-card p {
+    color: #0f0404;
+    /* White text color */
+    font-size: 18px;
+    /* Font size */
+}
+
+#retry-button {
+    background-color: #00cc66;
+    /* Green background for retry button */
+    color: white;
+    /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* Font size */
+}
+
+
+#retry-button:hover {
+    background-color: #00994d;
+    /* Darker green on hover */
+}
+
+.button {
+    display: flex;
+}
+
+.box {
+    width: 15px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .8s;
+    cursor: pointer;
+    position: relative;
+    background: rgb(58, 165, 253);
+    overflow: hidden;
+}
+
+.box:before {
+    content: "P";
+    position: absolute;
+    top: 0;
+    background: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .4s;
+}
+
+.box:nth-child(2)::before {
+    transform: translateY(-100%);
+    content: 'R';
+}
+
+.box:nth-child(3)::before {
+    content: 'E';
+}
+
+.box:nth-child(4)::before {
+    transform: translateY(-100%);
+    content: 'V';
+}
+
+.box:nth-child(5)::before {
+    content: 'I';
+}
+
+.box:nth-child(6)::before {
+    transform: translateY(-100%);
+    content: 'O';
+}
+
+.box:nth-child(7)::before {
+    content: 'U';
+}
+
+.box:nth-child(8)::before {
+    transform: translateY(-100%);
+    content: 'S';
+}
+
+.button:hover .box:before {
+    transform: translateY(0);
+}
+
+
+.box-n {
+    width: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .8s;
+    cursor: pointer;
+    position: relative;
+    background: rgb(58, 165, 253);
+    overflow: hidden;
+}
+
+.box-n:before {
+    content: "N";
+    position: absolute;
+    top: 0;
+    background: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .4s;
+}
+
+.box-n:nth-child(2)::before {
+    transform: translateY(-100%);
+    content: 'E';
+}
+
+.box-n:nth-child(3)::before {
+    content: 'X';
+}
+
+.box-n:nth-child(4)::before {
+    transform: translateY(-100%);
+    content: 'T';
+}
+
+
+.button:hover .box-n:before {
+    transform: translateY(0);
+}
+
+/* new css */
+
+.logo {
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    height: 80px;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #100f0f;
+    z-index: 2;
+    padding-bottom: 60px;
+}
+
+.logo::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(#488cfb,
+            #29dbbc,
+            #ddf505,
+            #ff9f0e,
+            #e440bb,
+            #655adc,
+            #488cfb);
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: running;
+}
+
+
+
+@keyframes rotate-hue {
+    to {
+        filter: hue-rotate(1turn);
+    }
+}
+
+.logo,
+.logo::after {
+    box-sizing: border-box;
+}
+
+.logo:active {
+    --border-width: 5px;
+}
+
+.question {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    height: 100px;
+    background-color: transparent;
+    border: 4px solid rgb(14, 13, 13);
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+#score-card{
+
+    background: transparent;
+}

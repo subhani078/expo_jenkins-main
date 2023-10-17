@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <div class="logo">
+            Quiz Time!
+        </div>
+        <form id="quiz-form">
+
+            <center>
+
+                <h1 class="question" id="question">Question goes here.</h1>
+
+            </center>
+
+            <div id="options" class="option">
+                <!-- Options will be filled dynamically using JavaScript -->
+            </div>
+
+
+            <div class="button-container">
+                <button type="button" id="prev-button">
+                    <div class="button">
+                        <div class="box">P</div>
+                        <div class="box">R</div>
+                        <div class="box">E</div>
+                        <div class="box">V</div>
+                        <div class="box">I</div>
+                        <div class="box">O</div>
+                        <div class="box">U</div>
+                        <div class="box">S</div>
+
+                    </div>
+                </button>
+                <!-- <button type="button" id="next-button">Next</button> -->
+                <button id="next-button">
+                    <div class="button">
+                        <div class="box-n">N</div>
+                        <div class="box-n">E</div>
+                        <div class="box-n">X</div>
+                        <div class="box-n">T</div>
+                    </div>
+                </button>
+            </div>
+
+            <!-- <button type="submit" id="submit-button">Submit</button> -->
+            <button id="dashbord" style="background-color: rgb(16, 223, 154); border: none; border-radius: 10px; padding: 7px;">
+                <a style="text-decoration: none; font-size: 20px; color: aliceblue; font-weight: bold;"
+                    href="./dashboard.html">Dashboard</a>
+            </button>
+
+            <p class="caution" style="color: rgb(240, 171, 20); font-weight: bold;">Answer all the Questions It will<strong
+                    style="font-size: x-large; color: red;"> Submit </strong> Automatically</p>
+        </form>
+        <div id="score-card" style="display: none;">
+            <h2>Score Card</h2>
+            <p id="score"></p>
+            <p id="correct-answers"></p>
+            <button style="background-color: rgb(16, 223, 154); border: none; border-radius: 10px; padding: 10px;">
+                <a style="text-decoration: none; font-size: 20px; color: aliceblue; font-weight: bold;"
+                    href="./main.html">Retry</a>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Function to refresh the page when the retry button is clicked
+        document.getElementById("retry-button").addEventListener("click", () => {
+            location.reload();
+        });
+    </script>
+</body>
+
+</html>
